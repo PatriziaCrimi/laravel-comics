@@ -1,3 +1,12 @@
+@import 'partials/variables';
+@import 'partials/normalize';
+@import 'partials/mixins';
+@import 'partials/common';
+@import 'partials/content';
+@import 'partials/header';
+@import 'partials/main_comics';
+@import 'partials/footer';
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 $fa-font-path: 'fontawesome';
