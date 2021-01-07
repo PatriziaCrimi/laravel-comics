@@ -1,10 +1,17 @@
 header {
   .header-mobile-tablet {
+    width: 100%;
     display: block;
     background-color: $third_color;
+    height: $height_header_mobile;
+    border-bottom: 1px solid $border_color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     .header-small-wrapper {
-      padding: $padding_unit 0;
+      height: $height_header_mobile;
 
       .burger-icon {
         i {
@@ -13,10 +20,15 @@ header {
       }
 
       .logo {
-        height: $height_unit / 2;
+        height: $height_unit / 2.3;
 
-        img {
+        a {
+          display: block;
           height: 100%;
+
+          img {
+            height: 100%;
+          }
         }
       }
 
@@ -34,6 +46,12 @@ header {
 
   #header-top {
     background-color: $primary_color;
+    height: $height_header_top;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     ul li {
       display: inline-block;
@@ -62,8 +80,13 @@ header {
 
   nav {
     height: $height_nav;
+    width: 100%;
     background-color: $third_color;
     border-bottom: 1px solid $border_color;
+    position: fixed;
+    top: $height_header_top;
+    left: 0;
+    z-index: 1;
 
     .nav-wrapper {
       width: 100%;
@@ -139,11 +162,33 @@ header {
   }
 
   #jumbotron {
+    background-color: #000;
 
+    .jumbo-top {
+      height: $height_header_mobile;
+    }
+
+    .jumbo-bottom {
+      background-image: $jumbotron_bg;
+      background-size: cover;
+      background-position: center;
+      padding: $padding_unit * 10;
+    }
   }
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
+
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  header {
+    #jumbotron {
+      .jumbo-bottom {
+        background-position: top;
+      }
+    }
+  }
+}
 
 /* Breakpoint Extra Large 1200px xl */
 @media screen and (min-width: 1200px) {
@@ -154,6 +199,12 @@ header {
 
     .header-xl-desktop {
       display: block;
+    }
+
+    #jumbotron {
+      .jumbo-top {
+        height: $height_nav + $height_header_top;
+      }
     }
   }
 }

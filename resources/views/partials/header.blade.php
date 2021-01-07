@@ -96,6 +96,7 @@
   </nav>
   {{-- Jumbotron --}}
   <div id="jumbotron">
-    
+    <div class="jumbo-top"></div>
+    <div class="jumbo-bottom"></div>
   </div>
 </header>

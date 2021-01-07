@@ -16133,19 +16133,30 @@ h1, h2, h3, h4, h5, h6 {
 /* Breakpoint Large 992px lg */
 /* Breakpoint Extra Large 1200px xl */
 header .header-mobile-tablet {
+  width: 100%;
   display: block;
   background-color: #fff;
+  height: 46px;
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 header .header-mobile-tablet .header-small-wrapper {
-  padding: 20px 0;
+  height: 46px;
 }
 header .header-mobile-tablet .header-small-wrapper .burger-icon i {
   cursor: pointer;
 }
 header .header-mobile-tablet .header-small-wrapper .logo {
-  height: 40px;
+  height: 34.7826086957px;
 }
-header .header-mobile-tablet .header-small-wrapper .logo img {
+header .header-mobile-tablet .header-small-wrapper .logo a {
+  display: block;
+  height: 100%;
+}
+header .header-mobile-tablet .header-small-wrapper .logo a img {
   height: 100%;
 }
 header .header-mobile-tablet .header-small-wrapper .search i {
@@ -16156,6 +16167,12 @@ header .header-xl-desktop {
 }
 header #header-top {
   background-color: #0282f9;
+  height: 32.8571428571px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 header #header-top ul li {
   display: inline-block;
@@ -16180,8 +16197,13 @@ header #header-top ul li:last-child a::after {
 }
 header nav {
   height: 115px;
+  width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  top: 32.8571428571px;
+  left: 0;
+  z-index: 1;
 }
 header nav .nav-wrapper {
   width: 100%;
@@ -16241,7 +16263,26 @@ header nav .nav-wrapper .search input#search-product {
   width: 90px;
   padding-left: 20px;
 }
+header #jumbotron {
+  background-color: #000;
+}
+header #jumbotron .jumbo-top {
+  height: 46px;
+}
+header #jumbotron .jumbo-bottom {
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+}
+
 /* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  header #jumbotron .jumbo-bottom {
+    background-position: top;
+  }
+}
 /* Breakpoint Extra Large 1200px xl */
 @media screen and (min-width: 1200px) {
   header .header-mobile-tablet {
@@ -16249,5 +16290,8 @@ header nav .nav-wrapper .search input#search-product {
   }
   header .header-xl-desktop {
     display: block;
+  }
+  header #jumbotron .jumbo-top {
+    height: 147.8571428571px;
   }
 }
