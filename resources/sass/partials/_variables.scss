@@ -3,12 +3,24 @@
 // Font
 $title_font: 'Open Sans', sans-serif; // 300;400;600;700;800
 $text_font: 'Open Sans Condensed', sans-serif; // 300;700
+$font_awesome: 'Font Awesome 5 Free';
+$font_size: 13px;
+$font_weight: 400;
 
 // Colors
+$primary_color: #0282f9;
+$secondary_color: #464646;
+$third_color: #fff;
+$border_color: #ebebeb;
 
 // Dimensions
+$height_unit: 80px;
+$width_unit: 90px;
+$height_nav: 115px;
 
 // Margins & Padding
+$margin_unit: 10px;
+$padding_unit: 20px;
 
 // Transition times
-$hover_time: 0.25s;
+$hover_time: 0.20s;

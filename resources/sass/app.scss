@@ -1,3 +1,11 @@
+$fa-font-path: 'fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
 @import 'partials/variables';
 @import 'partials/normalize';
 @import 'partials/mixins';
@@ -6,11 +14,3 @@
 @import 'partials/header';
 @import 'partials/main_comics';
 @import 'partials/footer';
-
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-$fa-font-path: 'fontawesome';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
