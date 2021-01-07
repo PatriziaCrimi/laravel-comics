@@ -7,9 +7,18 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     </head>
     <body>
-      HOMEPAGE
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <button class="btn-primary">Prova Bootstrap</button>
+            <h1>prova Fontawesome</h1>
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
