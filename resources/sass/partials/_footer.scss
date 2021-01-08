@@ -10,17 +10,35 @@ footer {
     margin: 0;
   }
 
-  ul.social-icons li {
-    display: inline-block;
-    padding-right: $padding_unit / 2;
+  ul.social-icons {
 
-    a {
-      display: block;
+    @each $icon in $footer_socials {
+      li.#{$icon} {
+        background-image: url('/img/footer-#{$icon}.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    li {
+      display: inline-block;
+      height: $social_icon_size;
       width: $social_icon_size;
       @include transition_hover;
 
-      img {
+      &:not(:first-child) {
+        margin-left: $margin_unit * 1.5;
+      }
+
+      a {
+        display: inline-block;
         width: 100%;
+        height: 100%
+        /*
+        img {
+          width: 100%;
+        }
+        */
       }
 
       &:hover {

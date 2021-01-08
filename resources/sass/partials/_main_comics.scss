@@ -22,23 +22,29 @@ main {
         padding-bottom: $padding_unit * 2;
         margin: 0 auto;
 
-        .thumb-album {
-          height: $card_size;
-          width: $card_size;
-          max-width: 100%;
-          margin-bottom: $padding_unit;
+        a {
+          display: block;
+          width: 100%;
+          color: $third_color;
 
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: top;
+          .thumb-album {
+            height: $card_size;
+            width: $card_size;
+            max-width: 100%;
+            margin-bottom: $padding_unit;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              object-position: top;
+            }
           }
-        }
 
-        h2 {
-          font-size: $font_size;
-          font-weight: $font_weight + $font_weight / 2;
+          h2 {
+            font-size: $font_size;
+            font-weight: $font_weight + $font_weight / 2;
+          }
         }
       }
     }

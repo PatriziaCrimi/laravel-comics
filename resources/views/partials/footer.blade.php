@@ -17,29 +17,29 @@
         <div class="row">
           <div class="col-12">
             <ul class="social-icons">
-              <li>
+              <li class="facebook">
                 <a href="#">
-                  <img src="{{asset('img/footer-facebook.png')}}" alt="Facebook">
+                  {{-- <img src="{{asset('img/footer-facebook.png')}}" alt="Facebook"> --}}
                 </a>
               </li>
-              <li>
+              <li class="twitter">
                 <a href="#">
-                  <img src="{{asset('img/footer-twitter.png')}}" alt="Twitter">
+                  {{-- <img src="{{asset('img/footer-twitter.png')}}" alt="Twitter"> --}}
                 </a>
               </li>
-              <li>
+              <li class="youtube">
                 <a href="#">
-                  <img src="{{asset('img/footer-youtube.png')}}" alt="Youtube">
+                  {{-- <img src="{{asset('img/footer-youtube.png')}}" alt="Youtube"> --}}
                 </a>
               </li>
-              <li>
+              <li class="pinterest">
                 <a href="#">
-                  <img src="{{asset('img/footer-pinterest.png')}}" alt="Pinterest">
+                  {{-- <img src="{{asset('img/footer-pinterest.png')}}" alt="Pinterest"> --}}
                 </a>
               </li>
-              <li>
+              <li class="periscope">
                 <a href="#">
-                  <img src="{{asset('img/footer-periscope.png')}}" alt="Periscope">
+                  {{-- <img src="{{asset('img/footer-periscope.png')}}" alt="Periscope"> --}}
                 </a>
               </li>
             </ul>
@@ -194,29 +194,29 @@
               <div class="social-links d-flex align-items-center">
                 <h2>Follow us</h2>
                 <ul class="social-icons">
-                  <li>
+                  <li class="facebook">
                     <a href="#">
-                      <img src="{{asset('img/footer-facebook.png')}}" alt="Facebook">
+                      {{-- <img src="{{asset('img/footer-facebook.png')}}" alt="Facebook"> --}}
                     </a>
                   </li>
-                  <li>
+                  <li class="twitter">
                     <a href="#">
-                      <img src="{{asset('img/footer-twitter.png')}}" alt="Twitter">
+                      {{-- <img src="{{asset('img/footer-twitter.png')}}" alt="Twitter"> --}}
                     </a>
                   </li>
-                  <li>
+                  <li class="youtube">
                     <a href="#">
-                      <img src="{{asset('img/footer-youtube.png')}}" alt="Youtube">
+                      {{-- <img src="{{asset('img/footer-youtube.png')}}" alt="Youtube"> --}}
                     </a>
                   </li>
-                  <li>
+                  <li class="pinterest">
                     <a href="#">
-                      <img src="{{asset('img/footer-pinterest.png')}}" alt="Pinterest">
+                      {{-- <img src="{{asset('img/footer-pinterest.png')}}" alt="Pinterest"> --}}
                     </a>
                   </li>
-                  <li>
+                  <li class="periscope">
                     <a href="#">
-                      <img src="{{asset('img/footer-periscope.png')}}" alt="Periscope">
+                      {{-- <img src="{{asset('img/footer-periscope.png')}}" alt="Periscope"> --}}
                     </a>
                   </li>
                 </ul>

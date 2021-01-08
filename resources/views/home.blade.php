@@ -16,10 +16,12 @@
           @foreach ($comics_list as $key => $album)
             <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
               <div class="card-album">
-                <div class="thumb-album">
-                  <img src="{{$album['thumb']}}" alt="{{$album['series']}}">
-                </div>
-                <h2 class="text-left">{{$album['series']}}</h2>
+                <a href="#">                  
+                  <div class="thumb-album">
+                    <img src="{{$album['thumb']}}" alt="{{$album['series']}}">
+                  </div>
+                  <h2 class="text-left">{{$album['series']}}</h2>
+                </a>
               </div>
             </div>
           @endforeach
