@@ -16106,6 +16106,10 @@ h3 {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -16373,5 +16377,40 @@ main section#comics .links ul li:last-child a img {
   main section#comics .links ul li a span {
     display: inline-block;
     padding-left: 10px;
+  }
+}
+footer {
+  color: #959595;
+}
+footer .footer-top {
+  background-image: url("/img/footer-bg.jpg");
+}
+footer .footer-bottom {
+  background-color: #303030;
+}
+footer .footer-bottom .footer-bottom-mobile {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+footer .footer-bottom .footer-bottom-mobile p a {
+  color: #0282f9;
+}
+footer .footer-bottom .footer-bottom-mobile p:last-of-type {
+  padding-top: 10px;
+}
+footer .footer-bottom .footer-bottom-tablet {
+  display: none;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  footer .footer-bottom .footer-bottom-mobile {
+    display: none;
+  }
+  footer .footer-bottom .footer-bottom-tablet {
+    display: block;
   }
 }

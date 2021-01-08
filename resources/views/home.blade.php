@@ -15,7 +15,7 @@
         <div class="cards-wrapper">
           <div class="row">
             @foreach ($comics_list as $key => $album)
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="card-album">
                   <div class="thumb-album">
                     <img src="{{$album['thumb']}}" alt="{{$album['series']}}">
