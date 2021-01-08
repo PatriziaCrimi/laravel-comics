@@ -16419,7 +16419,18 @@ footer ul.social-icons li a:hover {
   opacity: 0.8;
 }
 footer .footer-top {
+  background-color: #000;
   background-image: url("/img/footer-bg.jpg");
+  background-size: cover;
+  background-position: top;
+}
+footer .footer-top .container {
+  background-image: url("/img/dc-logo-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+footer .footer-top .footer-top-mobile {
   padding: 20px 0;
 }
 footer .footer-top .footer-top-mobile a.btn-primary:hover {
@@ -16455,6 +16466,38 @@ footer .footer-bottom .footer-bottom-desktop {
   }
   footer .footer-top .footer-top-desktop {
     display: block;
+    padding: 40px 0;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col {
+    float: left;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col .links-box {
+    padding: 0 40px 20px 0;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col .links-box h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 23.4px;
+    font-weight: 800;
+    padding-bottom: 5px;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col .links-box ul li {
+    text-transform: capitalize;
+    font-size: 13px;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col .links-box ul li a {
+    display: block;
+    color: #959595;
+    padding-bottom: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  footer .footer-top .footer-top-desktop .links-wrapper .links-col .links-box ul li a:hover {
+    color: #0282f9;
   }
   footer .footer-top .footer-top-desktop .credits {
     font-size: 13px;
@@ -16477,5 +16520,11 @@ footer .footer-bottom .footer-bottom-desktop {
   }
   footer .footer-bottom .footer-bottom-desktop h2 {
     margin-right: 30px;
+  }
+}
+/* Breakpoint Large 992px lg */
+@media screen and (min-width: 992px) {
+  footer .footer-top .container {
+    background-size: auto auto;
   }
 }
