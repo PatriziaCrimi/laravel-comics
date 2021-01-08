@@ -16131,6 +16131,14 @@ h1, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+a.btn-primary {
+  display: inline-block;
+  font-size: 18.2px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
 /* ------------------- MEDIA QUERY ------------------- */
 /* Breakpoint Small 576px sm */
 /* Breakpoint Medium 768px md */
@@ -16304,40 +16312,32 @@ header #jumbotron .jumbo-bottom {
     height: 147.8571428571px;
   }
 }
-main section#comics {
+main section#current-series {
   color: #fff;
   text-transform: uppercase;
-}
-main section#comics .current-series {
   background-color: #1c1c1c;
   padding-bottom: 20px;
 }
-main section#comics .current-series h1 {
+main section#current-series h1 {
   background-color: #0282f9;
   transform: translateY(-50%);
   font-weight: 800;
   display: inline-block;
   padding: 10px 30px;
 }
-main section#comics .current-series button.btn-primary {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  padding: 5px 60px;
-}
-main section#comics .cards-wrapper .card-album {
+main section#current-series .cards-wrapper .card-album {
   width: 175px;
   max-width: 100%;
   padding-bottom: 40px;
   margin: 0 auto;
 }
-main section#comics .cards-wrapper .card-album .thumb-album {
+main section#current-series .cards-wrapper .card-album .thumb-album {
   height: 175px;
   width: 175px;
   max-width: 100%;
   margin-bottom: 20px;
 }
-main section#comics .cards-wrapper .card-album .thumb-album img {
+main section#current-series .cards-wrapper .card-album .thumb-album img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -16345,31 +16345,39 @@ main section#comics .cards-wrapper .card-album .thumb-album img {
   -o-object-position: top;
      object-position: top;
 }
-main section#comics .cards-wrapper .card-album h2 {
+main section#current-series .cards-wrapper .card-album h2 {
   font-size: 13px;
   font-weight: 600;
 }
-main section#comics .links {
+main section#current-series button.btn-primary {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 5px 60px;
+}
+main section#links {
   background-color: #0282f9;
   padding: 30px 0;
+  color: #fff;
+  text-transform: uppercase;
 }
-main section#comics .links ul li {
+main section#links ul li {
   display: inline-block;
   font-size: 11px;
   font-weight: 500;
 }
-main section#comics .links ul li a {
+main section#links ul li a {
   display: block;
   color: #fff;
 }
-main section#comics .links ul li a img {
+main section#links ul li a img {
   height: 53.3333333333px;
 }
-main section#comics .links ul li a span {
+main section#links ul li a span {
   display: block;
   padding-top: 10px;
 }
-main section#comics .links ul li:last-child a img {
+main section#links ul li:last-child a img {
   padding: 10px;
 }
 
@@ -16387,14 +16395,44 @@ main section#comics .links ul li:last-child a img {
 footer {
   color: #959595;
 }
+footer h2 {
+  color: #0282f9;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 23.4px;
+  font-weight: 600;
+  padding: 20px 0;
+  margin: 0;
+}
+footer ul.social-icons li {
+  display: inline-block;
+  padding-right: 10px;
+}
+footer ul.social-icons li a {
+  display: block;
+  width: 35px;
+  transition: all 0.2s ease-in-out;
+}
+footer ul.social-icons li a img {
+  width: 100%;
+}
+footer ul.social-icons li a:hover {
+  opacity: 0.8;
+}
 footer .footer-top {
   background-image: url("/img/footer-bg.jpg");
+  padding: 20px 0;
+}
+footer .footer-top .footer-top-mobile a.btn-primary:hover {
+  background-color: #fff;
+  color: #0282f9;
+}
+footer .footer-top .footer-top-desktop {
+  display: none;
 }
 footer .footer-bottom {
   background-color: #303030;
 }
 footer .footer-bottom .footer-bottom-mobile {
-  display: block;
   font-size: 13px;
   font-weight: 400;
   padding: 10px 0;
@@ -16405,17 +16443,39 @@ footer .footer-bottom .footer-bottom-mobile p a {
 footer .footer-bottom .footer-bottom-mobile p:last-of-type {
   padding-top: 10px;
 }
-footer .footer-bottom .footer-bottom-tablet {
+footer .footer-bottom .footer-bottom-desktop {
   display: none;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
 /* Breakpoint Medium 768px md */
 @media screen and (min-width: 768px) {
+  footer .footer-top .footer-top-mobile {
+    display: none;
+  }
+  footer .footer-top .footer-top-desktop {
+    display: block;
+  }
+  footer .footer-top .footer-top-desktop .credits {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0;
+  }
   footer .footer-bottom .footer-bottom-mobile {
     display: none;
   }
-  footer .footer-bottom .footer-bottom-tablet {
+  footer .footer-bottom .footer-bottom-desktop {
     display: block;
+    padding: 20px 0;
+  }
+  footer .footer-bottom .footer-bottom-desktop a.btn-primary {
+    background-color: transparent;
+    border: 2px solid #0282f9;
+  }
+  footer .footer-bottom .footer-bottom-desktop a.btn-primary:hover {
+    background-color: #0282f9;
+  }
+  footer .footer-bottom .footer-bottom-desktop h2 {
+    margin-right: 30px;
   }
 }

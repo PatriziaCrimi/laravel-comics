@@ -1,15 +1,55 @@
 footer {
   color: $footer_text_color;
 
+  h2 {
+    color: $primary_color;
+    font-family: $title_font;
+    font-size: $font_size * 1.8;
+    font-weight: $font_weight * 1.5;
+    padding: $padding_unit 0;
+    margin: 0;
+  }
+
+  ul.social-icons li {
+    display: inline-block;
+    padding-right: $padding_unit / 2;
+
+    a {
+      display: block;
+      width: $social_icon_size;
+      @include transition_hover;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
   .footer-top {
     background-image: $footer_top_bg;
-  }
+    padding: $padding_unit 0;
+
+    .footer-top-mobile {
+
+      a.btn-primary:hover {
+        background-color: $third_color;
+        color: $primary_color;
+      }
+    }
+
+    .footer-top-desktop {
+      display: none;
+    }
+  }  // Closing Footer Top
 
   .footer-bottom {
     background-color: $secondary_bg_color;
 
     .footer-bottom-mobile {
-      display: block;
       font-size: $font_size;
       font-weight: $font_weight;
       padding: $padding_unit / 2 0;
@@ -25,10 +65,10 @@ footer {
       }
     }
 
-    .footer-bottom-tablet {
+    .footer-bottom-desktop {
       display: none;
     }
-  }
+  }  // Closing Footer Bottom
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -37,14 +77,50 @@ footer {
 @media screen and (min-width: 768px) {
 
   footer {
+
+    .footer-top {
+
+      .footer-top-mobile {
+        display: none;
+      }
+
+      .footer-top-desktop {
+        display: block;
+
+        .links {
+
+        }
+
+        .credits {
+          font-size: $font_size;
+          font-weight: $font_weight;
+          padding: $padding_unit / 2 0;
+        }
+      }
+    }
+
     .footer-bottom {
 
       .footer-bottom-mobile {
         display: none;
       }
 
-      .footer-bottom-tablet {
+      .footer-bottom-desktop {
         display: block;
+        padding: $padding_unit 0;
+
+        a.btn-primary {
+          background-color: transparent;
+          border: 2px solid $primary_color;
+
+          &:hover {
+            background-color: $primary_color;
+          }
+        }
+
+        h2 {
+          margin-right: $margin_unit * 3;
+        }
       }
     }
   }
