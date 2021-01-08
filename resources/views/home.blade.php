@@ -16,7 +16,7 @@
           @foreach ($comics_list as $key => $album)
             <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
               <div class="card-album">
-                <a href="#">                  
+                <a href="{{route('single_comic', ['id' => $key])}}">
                   <div class="thumb-album">
                     <img src="{{$album['thumb']}}" alt="{{$album['series']}}">
                   </div>

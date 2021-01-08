@@ -13,15 +13,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ---------------------------- Homepage Route ----------------------------
+
 Route::get('/', function () {
   // Storing in a variable the array of comics contained in the file "comics.php" in "config" folder
   $comics_list = config('comics');
-  // Associative array to be able to se the variables in ".blade.php" files
+  // Associative array to be able to use the variables in ".blade.php" files
   $data = [
     'comics_list' => $comics_list,
   ];
   return view('home', $data);
 })->name('homepage');
+
+// -------------------------- Single Comic Route --------------------------
+
+Route::get('/comic/{id}', function($id) {
+  // Storing in a variable the array of comics contained in the file "comics.php" in "config" folder
+  $comics_list = config('comics');
+  // Checking that $ID is a valid value: if it is NOT included in my array "$comics_list" an error 404 is thrown
+  if(!array_key_exists($id, $comics_list)) {
+    abort(404);
+  }
+  // Storing in a variable the single comic (product) that I need to print its details in the web page
+  $comic = $comics_list[$id];
+  // Associative array to be able to use the variables in ".blade.php" files
+  $data = [
+    'comic' => $comic,
+  ];
+  return view('comic', $data);
+})->name('single_comic');
+
+// ------------------------- Navbar Menu Links Routes -------------------------
 
 Route::get('/characters', function () {
     return view('characters');

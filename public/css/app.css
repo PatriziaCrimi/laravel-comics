@@ -16397,6 +16397,19 @@ main section#links ul li:last-child a img {
     padding-left: 10px;
   }
 }
+main section#comic-thumb {
+  color: green;
+}
+main section#comic-description {
+  color: blue;
+}
+main section#comic-info {
+  color: purple;
+}
+main section#comic-links {
+  color: coral;
+}
+
 footer {
   color: #959595;
 }
