@@ -1,8 +1,8 @@
 // ---------------------------  Variables ----------------------------
 
 // Font
-$title_font: 'Open Sans', sans-serif; // 300;400;600;700;800
-$text_font: 'Open Sans Condensed', sans-serif; // 300;700
+$text_font: 'Open Sans', sans-serif; // 300;400;600;700;800
+$title_font: 'Open Sans Condensed', sans-serif; // 300;700
 $font_awesome: 'Font Awesome 5 Free';
 $font_size: 13px;
 $font_weight: 400;
@@ -11,6 +11,7 @@ $font_weight: 400;
 $primary_color: #0282f9;
 $secondary_color: #464646;
 $third_color: #fff;
+$primary_bg_color: #1c1c1c;
 $border_color: #ebebeb;
 
 // Dimensions
@@ -19,6 +20,7 @@ $width_unit: 90px;
 $height_nav: 115px;
 $height_header_top: $height_nav / 3.5;
 $height_header_mobile: 46px;
+$card_size: 175px;
 
 // Margins & Padding
 $margin_unit: 10px;

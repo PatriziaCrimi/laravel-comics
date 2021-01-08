@@ -16120,11 +16120,11 @@ a:hover {
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+h1, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -16168,6 +16168,7 @@ header .header-xl-desktop {
 header #header-top {
   background-color: #0282f9;
   height: 32.8571428571px;
+  line-height: 32.8571428571px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -16176,6 +16177,7 @@ header #header-top {
 }
 header #header-top ul li {
   display: inline-block;
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   margin-left: 40px;
   font-weight: 400;
@@ -16183,8 +16185,6 @@ header #header-top ul li {
 header #header-top ul li a {
   display: block;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
-  padding: 6.6666666667px 0;
 }
 header #header-top ul li a span {
   font-size: 10.8333333333px;
@@ -16256,7 +16256,7 @@ header nav .nav-wrapper .search {
 header nav .nav-wrapper .search input#search-product {
   border: 0;
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 15px;
   font-weight: 700;
   outline: none;
@@ -16293,5 +16293,85 @@ header #jumbotron .jumbo-bottom {
   }
   header #jumbotron .jumbo-top {
     height: 147.8571428571px;
+  }
+}
+main section#comics {
+  color: #fff;
+  text-transform: uppercase;
+}
+main section#comics .current-series {
+  background-color: #1c1c1c;
+  padding-bottom: 20px;
+}
+main section#comics .current-series h1 {
+  background-color: #0282f9;
+  transform: translateY(-50%);
+  font-weight: 800;
+  display: inline-block;
+  padding: 10px 30px;
+}
+main section#comics .current-series button.btn-primary {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 5px 60px;
+}
+main section#comics .cards-wrapper .card-album {
+  width: 175px;
+  max-width: 100%;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+main section#comics .cards-wrapper .card-album .thumb-album {
+  height: 175px;
+  width: 175px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+main section#comics .cards-wrapper .card-album .thumb-album img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main section#comics .cards-wrapper .card-album h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+main section#comics .links {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+main section#comics .links ul li {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+}
+main section#comics .links ul li a {
+  display: block;
+  color: #fff;
+}
+main section#comics .links ul li a img {
+  height: 53.3333333333px;
+}
+main section#comics .links ul li a span {
+  display: block;
+  padding-top: 10px;
+}
+main section#comics .links ul li:last-child a img {
+  padding: 10px;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Large 992px lg */
+@media screen and (min-width: 992px) {
+  main section#comics .links ul li {
+    font-size: 13px;
+  }
+  main section#comics .links ul li a span {
+    display: inline-block;
+    padding-left: 10px;
   }
 }
