@@ -16,6 +16,7 @@ header {
       .burger-icon {
         i {
           cursor: pointer;
+          font-size: $font_size * 1.5;
         }
       }
 
@@ -35,6 +36,7 @@ header {
       .search {
         i {
           cursor: pointer;
+          font-size: $font_size * 1.5;
         }
       }
     }
@@ -156,6 +158,10 @@ header {
           outline: none;
           width: $width_unit;
           padding-left: $padding_unit;
+        }
+
+        i {
+          font-size: $font_size * 1.5;
         }
       }
     }
