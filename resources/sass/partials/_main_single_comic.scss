@@ -123,7 +123,7 @@ main {
 
     .adv {
 
-      h2 {
+      h3 {
         font-size: $font_size * 1.5;
         font-weight: $font_weight * 2;
         padding-bottom: $padding_unit / 2;
@@ -142,7 +142,28 @@ main {
   }
 
   section#comic-details {
-  color: purple;
+
+    h2 {
+
+    }
+
+    .talent-wrapper {
+
+      .talent-box {
+        h4 {
+
+        }
+      }
+    }
+
+    .specs-wrapper {
+      
+      .specs-box {
+        h4 {
+
+        }
+      }
+    }
   }
 
   section#comic-links {

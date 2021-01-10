@@ -16502,7 +16502,7 @@ main section#comic-description p.description {
   line-height: 23px;
   padding-bottom: 60px;
 }
-main section#comic-description .adv h2 {
+main section#comic-description .adv h3 {
   font-size: 19.5px;
   font-weight: 800;
   padding-bottom: 10px;
@@ -16515,9 +16515,6 @@ main section#comic-description .adv a.adv-picture img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-main section#comic-details {
-  color: purple;
 }
 main section#comic-links {
   color: coral;
@@ -16730,4 +16727,16 @@ footer .footer-bottom .footer-bottom-desktop {
   footer .footer-top .container {
     background-size: auto auto;
   }
+}
+main section#error {
+  padding: 80px 0;
+}
+main section#error h1 {
+  font-weight: 800;
+  color: red;
+}
+main section#error p {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 40px 0;
 }

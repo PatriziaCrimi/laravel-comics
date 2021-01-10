@@ -1,0 +1,16 @@
+main {
+  section#error {
+    padding: $padding_unit * 4 0;
+
+    h1 {
+      font-weight: $font_weight * 2;
+      color: red;
+    }
+
+    p {
+      font-size: $font_size * 2;
+      font-weight: $font_weight + 200;
+      padding: $padding_unit * 2 0;
+    }
+  }
+}

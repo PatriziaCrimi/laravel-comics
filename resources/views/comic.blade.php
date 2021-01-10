@@ -52,7 +52,7 @@
         </div>
         <div class="col-12 col-lg-4">
           <div class="adv">
-            <h2 class="text-uppercase text-right">Advertisement</h2>
+            <h3 class="text-uppercase text-right">Advertisement</h2>
             <a class="adv-picture">
               <img src="{{asset('img/adv_ok.jpg')}}" alt="Advertisement picture">
             </a>
@@ -64,9 +64,33 @@
   <section id="comic-details">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <p>Price: {{$comic['price']}}</p>
-          <p>Sale date: {{$comic['sale_date']}}</p>
+        <div class="col-12 col-md-6">
+          <div class="talent-wrapper">
+            <h2>Talent</h2>
+            <div class="talent-box">
+              <h4>Art by:</h4>
+              <p>
+                prova
+              </p>
+            </div>
+            <div class="talent-box">
+              <h4>Written by:</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="specs">
+            <h2>Specs</h2>
+            <div class="specs-box">
+
+            </div>
+            <div class="specs-box">
+
+            </div>
+            <div class="specs-box">
+
+            </div>
+          </div>
         </div>
       </div>
     </div>  {{-- Closing Section Comic-info container --}}
