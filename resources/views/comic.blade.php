@@ -16,18 +16,52 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  {{-- Closing Section Comic-thumb container --}}
   </section>
   <section id="comic-description">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <p>{{$comic['description']}}</p>
+        <div class="col-12 col-lg-8">
+          <h1 class="text-uppercase">{{$comic['title']}}</h1>
+          {{-- Comic-info Mobile --}}
+          <div class="comic-info-mobile">
+            <div class="price-availability">
+              <div class="price float-left">
+                <span>U.S. Price: </span>
+                <span class="us-price">{{$comic['price']}}</span>
+              </div>
+              <span class="availability text-uppercase float-right">Available</span>
+            </div>
+            <div class="check-availability">
+              <a class="text-capitalize" href="#">Check availability</a>
+            </div>
+          </div>
+          {{-- Comic-info Desktop --}}
+          <div class="comic-info-desktop justify-content-between align-items-center">
+            <div class="price">
+              <span>U.S. Price: </span>
+              <span>{{$comic['price']}}</span>
+            </div>
+            <div class="availability">
+              <span class="text-uppercase available">Available</span>
+              <a class="text-capitalize" href="#">Check availability</a>
+            </div>
+          </div>
+          {{-- Description --}}
+          <p class="description text-justify">{{$comic['description']}}</p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="adv">
+            <h2 class="text-uppercase text-right">Advertisement</h2>
+            <a class="adv-picture">
+              <img src="{{asset('img/adv_ok.jpg')}}" alt="Advertisement picture">
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </div>  {{-- Closing Section Comic-descritpion container --}}
   </section>
-  <section id="comic-info">
+  <section id="comic-details">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -35,7 +69,7 @@
           <p>Sale date: {{$comic['sale_date']}}</p>
         </div>
       </div>
-    </div>
+    </div>  {{-- Closing Section Comic-info container --}}
   </section>
   <section id="comic-links">
     <div class="container">
@@ -44,6 +78,6 @@
           prova links
         </div>
       </div>
-    </div>
+    </div>  {{-- Closing Section Comic-links container --}}
   </section>
 @endsection

@@ -16127,7 +16127,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -16351,6 +16351,7 @@ main section#current-series .cards-wrapper .card-album a .thumb-album img {
      object-position: top;
 }
 main section#current-series .cards-wrapper .card-album a h2 {
+  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
 }
@@ -16442,15 +16443,131 @@ main section#comic-thumb .thumb-wrapper a .view-gallery {
   right: 0;
 }
 main section#comic-description {
-  color: blue;
+  padding: 50px 0;
 }
-main section#comic-info {
+main section#comic-description h1 {
+  color: #003f5e;
+  font-size: 19.5px;
+  font-weight: 800;
+}
+main section#comic-description .comic-info-mobile {
+  font-size: 14.3px;
+  border-top: 1px solid #ebebeb;
+  margin: 30px 0;
+}
+main section#comic-description .comic-info-mobile .price-availability {
+  padding: 15.3846153846px;
+}
+main section#comic-description .comic-info-mobile .price-availability::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main section#comic-description .comic-info-mobile .price-availability .price {
+  color: #003f5e;
+}
+main section#comic-description .comic-info-mobile .price-availability .price span.us-price {
+  font-weight: 700;
+}
+main section#comic-description .comic-info-mobile .price-availability span.availability {
+  color: #55ba59;
+}
+main section#comic-description .comic-info-mobile .check-availability {
+  color: #fff;
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+}
+main section#comic-description .comic-info-mobile .check-availability a {
+  display: block;
+  padding: 15.3846153846px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+}
+main section#comic-description .comic-info-mobile .check-availability a::after {
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  content: "\F0D7";
+  position: absolute;
+  right: 15.3846153846px;
+  font-size: 15.6px;
+}
+main section#comic-description .comic-info-desktop {
+  display: none;
+}
+main section#comic-description p.description {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  line-height: 23px;
+  padding-bottom: 60px;
+}
+main section#comic-description .adv h2 {
+  font-size: 19.5px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+main section#comic-description .adv a.adv-picture {
+  display: block;
+  width: 100%;
+}
+main section#comic-description .adv a.adv-picture img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section#comic-details {
   color: purple;
 }
 main section#comic-links {
   color: coral;
 }
 
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Small 576px sm */
+@media screen and (min-width: 576px) {
+  main section#comic-description .comic-info-mobile {
+    display: none;
+  }
+  main section#comic-description .comic-info-desktop {
+    display: flex;
+    font-size: 14.3px;
+    color: #fff;
+    background-color: #55ba59;
+    border-bottom: 1px solid #357739;
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+  main section#comic-description .comic-info-desktop .price span:last-child {
+    font-weight: 700;
+  }
+  main section#comic-description .comic-info-desktop .availability span {
+    color: #bafd9c;
+    font-weight: 600;
+  }
+  main section#comic-description .comic-info-desktop .availability span.available {
+    display: inline-block;
+    padding: 20px;
+    border-right: 1px solid #357739;
+  }
+  main section#comic-description .comic-info-desktop .availability a {
+    color: #fff;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+  main section#comic-description .comic-info-desktop .availability a::after {
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    content: "\F0D7";
+    margin-left: 10px;
+  }
+}
+/* Breakpoint Large 992px lg */
+@media screen and (min-width: 992px) {
+  main section#comic-description h1 {
+    font-size: 32.5px;
+  }
+}
 footer {
   color: #959595;
 }
