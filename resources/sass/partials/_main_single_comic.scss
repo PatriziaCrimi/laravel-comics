@@ -41,7 +41,7 @@ main {
 
         .view-gallery {
           color: $third_color;
-          background-color: $gallery_bg_color;
+          background-color: $links_color;
           padding: 0 $padding_unit / 2;
           position: absolute;
           bottom: 0;
@@ -82,13 +82,13 @@ main {
         }
 
         span.availability {
-          color: $third_bg_color;
+          color: $info_bg_color;
         }
       }
 
       .check-availability {
         color: $third_color;
-        background-color: $third_bg_color;
+        background-color: $info_bg_color;
         border-bottom: 1px solid $border_info_color;
 
         a {
@@ -142,32 +142,89 @@ main {
   }
 
   section#comic-details {
+    background-color: $third_bg_color;
+    border: 1px solid $border_color;
+    padding-bottom: $padding_unit * 4;
 
-    h2 {
+    .talent-wrapper,
+    .specs-wrapper {
 
+      h2 {
+        color: $title_color;
+        font-size: $font_size * 1.8;
+        font-weight: $font_weight * 2;
+        padding: $padding_unit 0;
+        margin: 0;
+      }
+
+      ul li {
+        border-bottom: 1px solid $border_color;
+        padding: $padding_unit / 2 0;
+
+        &:first-child {
+          border-top: 1px solid $border_color;
+        }
+
+        h4 {
+          display: inline-block;
+          color: $title_color;
+          font-weight: $font_weight +200;
+          font-size: $font_size * 1.1;
+          margin: 0;
+        }
+
+        .writers,
+        .artists {
+          line-height: 1.1;
+        }
+
+        a {
+          font-size: $font_size * 1.1;
+          font-weight: $font_weight + 200;
+          color: $links_color;
+          @include transition_hover;
+
+          &:hover {
+            color: $hover_text_color;
+          }
+        }
+
+        span {
+          font-size: $font_size * 1.1;
+        }
+      }
     }
 
     .talent-wrapper {
+      ul li {
+        @include display-flex;
 
-      .talent-box {
         h4 {
+          width: calc(100% / 3);
+        }
 
+        .artists,
+        .writers {
+          width: calc(100% / 3 * 2);
         }
       }
     }
 
     .specs-wrapper {
-      
-      .specs-box {
-        h4 {
+      padding-left: $padding_unit;
 
-        }
+      h4 {
+        text-transform: capitalize;
+      }
+
+      span {
+
       }
     }
   }
 
   section#comic-links {
-  color: coral;
+    display: none;
   }
 }
 
@@ -188,7 +245,7 @@ main {
         @include display-flex;
         font-size: $font_size * 1.1;
         color: $third_color;
-        background-color: $third_bg_color;
+        background-color: $info_bg_color;
         border-bottom: 1px solid $border_info_color;
         margin: $margin_unit * 3 0;
         padding: 0 $padding_unit;
@@ -227,6 +284,64 @@ main {
       }
     }
   }
+}
+
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+
+  main {
+
+    section#comic-links {
+      display: block;
+      background-color: $third_bg_color;
+
+      ul {
+
+        &::after {
+          @include clear-fix;
+        }
+
+        li {
+          float: left;
+          border-right: 1px solid $border_color;
+
+          &:first-child {
+            border-left: 1px solid $border_color;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: $padding_unit;
+            @include transition_hover;
+
+            &::after {
+              @include clear-fix;
+            }
+
+            &:hover {
+              color: $title_color;
+              background-color: $hover_links_color;
+            }
+
+            h5 {
+              text-transform: uppercase;
+              color: $links_title_color;
+              font-size: $font_size;
+              font-weight: $font_weight * 2;
+              float: left;
+            }
+
+            img {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* Breakpoint Large 992px lg */

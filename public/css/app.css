@@ -16516,8 +16516,75 @@ main section#comic-description .adv a.adv-picture img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+main section#comic-details {
+  background-color: #f6f6f6;
+  border: 1px solid #ebebeb;
+  padding-bottom: 80px;
+}
+main section#comic-details .talent-wrapper h2,
+main section#comic-details .specs-wrapper h2 {
+  color: #003f5e;
+  font-size: 23.4px;
+  font-weight: 800;
+  padding: 20px 0;
+  margin: 0;
+}
+main section#comic-details .talent-wrapper ul li,
+main section#comic-details .specs-wrapper ul li {
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0;
+}
+main section#comic-details .talent-wrapper ul li:first-child,
+main section#comic-details .specs-wrapper ul li:first-child {
+  border-top: 1px solid #ebebeb;
+}
+main section#comic-details .talent-wrapper ul li h4,
+main section#comic-details .specs-wrapper ul li h4 {
+  display: inline-block;
+  color: #003f5e;
+  font-weight: 600;
+  font-size: 14.3px;
+  margin: 0;
+}
+main section#comic-details .talent-wrapper ul li .writers,
+main section#comic-details .talent-wrapper ul li .artists,
+main section#comic-details .specs-wrapper ul li .writers,
+main section#comic-details .specs-wrapper ul li .artists {
+  line-height: 1.1;
+}
+main section#comic-details .talent-wrapper ul li a,
+main section#comic-details .specs-wrapper ul li a {
+  font-size: 14.3px;
+  font-weight: 600;
+  color: #00a9d9;
+  transition: all 0.2s ease-in-out;
+}
+main section#comic-details .talent-wrapper ul li a:hover,
+main section#comic-details .specs-wrapper ul li a:hover {
+  color: #77daf5;
+}
+main section#comic-details .talent-wrapper ul li span,
+main section#comic-details .specs-wrapper ul li span {
+  font-size: 14.3px;
+}
+main section#comic-details .talent-wrapper ul li {
+  display: flex;
+}
+main section#comic-details .talent-wrapper ul li h4 {
+  width: calc(100% / 3);
+}
+main section#comic-details .talent-wrapper ul li .artists,
+main section#comic-details .talent-wrapper ul li .writers {
+  width: calc(100% / 3 * 2);
+}
+main section#comic-details .specs-wrapper {
+  padding-left: 20px;
+}
+main section#comic-details .specs-wrapper h4 {
+  text-transform: capitalize;
+}
 main section#comic-links {
-  color: coral;
+  display: none;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -16557,6 +16624,51 @@ main section#comic-links {
     font-family: "Font Awesome 5 Free";
     content: "\F0D7";
     margin-left: 10px;
+  }
+}
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  main section#comic-links {
+    display: block;
+    background-color: #f6f6f6;
+  }
+  main section#comic-links ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  main section#comic-links ul li {
+    float: left;
+    border-right: 1px solid #ebebeb;
+  }
+  main section#comic-links ul li:first-child {
+    border-left: 1px solid #ebebeb;
+  }
+  main section#comic-links ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  main section#comic-links ul li a::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  main section#comic-links ul li a:hover {
+    color: #003f5e;
+    background-color: #E9E9E9;
+  }
+  main section#comic-links ul li a h5 {
+    text-transform: uppercase;
+    color: #9f9f9f;
+    font-size: 13px;
+    font-weight: 800;
+    float: left;
+  }
+  main section#comic-links ul li a img {
+    float: right;
   }
 }
 /* Breakpoint Large 992px lg */

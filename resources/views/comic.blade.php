@@ -67,29 +67,49 @@
         <div class="col-12 col-md-6">
           <div class="talent-wrapper">
             <h2>Talent</h2>
-            <div class="talent-box">
-              <h4>Art by:</h4>
-              <p>
-                prova
-              </p>
-            </div>
-            <div class="talent-box">
-              <h4>Written by:</h4>
-            </div>
+            <ul>
+              <li>
+                <h4>Art by:</h4>
+                <div class="artists">
+                  @foreach ($comic['artists'] as $artist)
+                    {{-- Cannot use indentation because of the space around the coma ',' --}}
+                      <a href="#">{{$artist}}</a>{{ !$loop->last ? ',' : ''}}
+                  @endforeach
+                </div>
+              </li>
+              <li>
+                <h4>Written by:</h4>
+                <div class="writers">
+                  @foreach ($comic['writers'] as $writer)
+                    {{-- Cannot use indentation because of the space around the coma ',' --}}
+                    @if(!$loop->last)
+                      <a href="#">{{$writer}}</a>,
+                    @endif
+                  @endforeach
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <div class="specs">
+          <div class="specs-wrapper">
             <h2>Specs</h2>
-            <div class="specs-box">
-
-            </div>
-            <div class="specs-box">
-
-            </div>
-            <div class="specs-box">
-
-            </div>
+            <ul>
+              <li>
+                <h4>Series:</h4>
+                <a href="#" class="text-uppercase">
+                  {{$comic['series']}}
+                </a>
+              </li>
+              <li>
+                <h4>U.S. Price: </h4>
+                <span>{{$comic['price']}}</span>
+              </li>
+              <li>
+                <h4>On sale date: </h4>
+                <span>{{DateTime::createFromFormat('Y-m-d', $comic['sale_date'])->format('M d Y')}}</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -99,7 +119,32 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          prova links
+          <ul>
+            <li>
+              <a href="#">
+                <h5>Digital comics</h5>
+                <img src="{{asset('img/cta-icons.png')}}" alt="Tablet icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Shop dc</h5>
+                <img src="{{asset('img/cta-icons.png')}}" alt="T-shirt icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Comic shop locator</h5>
+                <img src="{{asset('img/cta-icons.png')}}" alt="Locator icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Subscriptions</h5>
+                <img src="{{asset('img/cta-icons.png')}}" alt="Cards icon">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>  {{-- Closing Section Comic-links container --}}
