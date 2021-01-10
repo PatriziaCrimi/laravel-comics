@@ -1,7 +1,55 @@
 main {
 
   section#comic-thumb {
-    color: green;
+    height: $height_unit;
+    background-color: $primary_color;
+
+    .container.thumb,
+    .container.thumb .row,
+    .container.thumb .col-12 {
+      height: 100%;
+    }
+
+    .container.thumb .col-12 {
+      position: relative;
+    }
+
+    .thumb-wrapper {
+      position: absolute;
+      bottom: $padding_unit;
+
+      a {
+        font-size: $font_size;
+        font-weight: $font_weight + 200;
+        display: inline-block;
+        height: $height_thumb_comic;
+        border: 1px solid $third_color;
+        position: relative;
+
+        img {
+          height: 100%;
+        }
+
+        .comic-type {
+          color: $third_color;
+          background-color: rgba(0,102,170,.9);
+          padding: 0 $padding_unit / 2;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .view-gallery {
+          color: $third_color;
+          background-color: #00a9d9;
+          padding: 0 $padding_unit / 2;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
   }
 
   section#comic-description {

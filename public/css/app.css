@@ -16398,7 +16398,48 @@ main section#links ul li:last-child a img {
   }
 }
 main section#comic-thumb {
-  color: green;
+  height: 80px;
+  background-color: #0282f9;
+}
+main section#comic-thumb .container.thumb,
+main section#comic-thumb .container.thumb .row,
+main section#comic-thumb .container.thumb .col-12 {
+  height: 100%;
+}
+main section#comic-thumb .container.thumb .col-12 {
+  position: relative;
+}
+main section#comic-thumb .thumb-wrapper {
+  position: absolute;
+  bottom: 20px;
+}
+main section#comic-thumb .thumb-wrapper a {
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  height: 290px;
+  border: 1px solid #fff;
+  position: relative;
+}
+main section#comic-thumb .thumb-wrapper a img {
+  height: 100%;
+}
+main section#comic-thumb .thumb-wrapper a .comic-type {
+  color: #fff;
+  background-color: rgba(0, 102, 170, 0.9);
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section#comic-thumb .thumb-wrapper a .view-gallery {
+  color: #fff;
+  background-color: #00a9d9;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 main section#comic-description {
   color: blue;
