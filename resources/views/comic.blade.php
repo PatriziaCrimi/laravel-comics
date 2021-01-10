@@ -123,25 +123,25 @@
             <li>
               <a href="#">
                 <h5>Digital comics</h5>
-                <img src="{{asset('img/cta-icons.png')}}" alt="Tablet icon">
+                <div class="link-icon"></div>
               </a>
             </li>
             <li>
               <a href="#">
                 <h5>Shop dc</h5>
-                <img src="{{asset('img/cta-icons.png')}}" alt="T-shirt icon">
+                <div class="link-icon"></div>
               </a>
             </li>
             <li>
               <a href="#">
                 <h5>Comic shop locator</h5>
-                <img src="{{asset('img/cta-icons.png')}}" alt="Locator icon">
+                <div class="link-icon"></div>
               </a>
             </li>
             <li>
               <a href="#">
                 <h5>Subscriptions</h5>
-                <img src="{{asset('img/cta-icons.png')}}" alt="Cards icon">
+                <div class="link-icon"></div>
               </a>
             </li>
           </ul>
